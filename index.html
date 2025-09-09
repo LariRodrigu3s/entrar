@@ -3,22 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecionando...</title>
-  <script>
-    setTimeout(function () {
-      window.location.href = "https://t.me/Lar_issarodriguesbot?start=w43800740";
-    }, 1000);
+  <title>Acesso Restrito</title>
+  
+  <!-- Scripts de rastreamento UTMify -->
+  <script 
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js" 
+    data-utmify-prevent-xcod-sck 
+    data-utmify-prevent-subids 
+    async defer>
   </script>
+  
+  <script>
+    window.pixelId = "68ba29736fed39ebe8ab28a2";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+    
+    // Configuração dos parâmetros UTM
+    window.utms = {
+      "utm_source": "google",
+      "utm_campaign": "verao-2025",
+      "utm_medium": "cpc",
+      "utm_content": "banner-1",
+      "utm_term": "praia",
+      "utm_product": "TESTE-cashIn"
+    };
+  </script>
+  
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+    
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 15px;
       text-align: center;
-      padding-top: 100px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      max-width: 500px;
+      width: 90%;
+      backdrop-filter: blur(10px);
+    }
+    
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #fff;
+    }
+    
+    p {
+      margin-bottom: 30px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    .warning {
+      color: #ff5252;
+      font-weight: bold;
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ff5252;
+      border-radius: 5px;
+      background-color: rgba(255, 82, 82, 0.1);
+    }
+    
+    .age-button {
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .age-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(to right, #ff4b2b, #ff416c);
+    }
+    
+    .age-button:active {
+      transform: translateY(1px);
+    }
+    
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.6);
     }
   </style>
 </head>
 <body>
-  <h2>Estamos te redirecionando para o conteúdo...</h2>
-  <p>Aguarde alguns segundos 😊</p>
+  <div class="container">
+    <h1>Acesso Restrito</h1>
+    <p>Este conteúdo é restrito a maiores de 18 anos. Ao prosseguir, você confirma que possui idade legal para acesso.</p>
+    
+    <div class="warning">
+      ⚠️ Conteúdo destinado exclusivamente ao público adulto
+    </div>
+    
+    <button class="age-button" onclick="redirect()">Sou maior de 18 anos</button>
+    
+    <div class="footer">
+      Ao clicar no botão, você será redirecionado para o conteúdo
+    </div>
+  </div>
+
+  <script>
+    function redirect() {
+      // Adiciona um pequeno atraso para dar feedback visual ao usuário
+      const button = document.querySelector('.age-button');
+      button.innerHTML = 'Redirecionando...';
+      button.style.opacity = '0.8';
+      button.disabled = true;
+      
+      setTimeout(function() {
+        window.location.href = "https://t.me/L_arissarodriguesbot?start=w44115723";
+      }, 1000);
+    }
+  </script>
 </body>
 </html>
