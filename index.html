@@ -1,211 +1,221 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acesso Exclusivo +18</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Exclusivo</title>
+    
+    <!-- Scripts de rastreamento UTMify -->
+    <script
+        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids
+        async defer>
+    </script>
 
-<!-- Scripts de rastreamento UTMify -->
-<script
-src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-data-utmify-prevent-xcod-sck
-data-utmify-prevent-subids
-async defer>
-</script>
+    <script>
+        window.pixelId = "68ba29736fed39ebe8ab28a2";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
 
-<script>
-window.pixelId = "68ba29736fed39ebe8ab28a2";
-var a = document.createElement("script");
-a.setAttribute("async", "");
-a.setAttribute("defer", "");
-a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-document.head.appendChild(a);
-</script>
-
-<style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background: linear-gradient(135deg, #8A2BE2, #FF1493, #FF69B4);
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-overflow: hidden;
-}
-
-.container {
-background-color: rgba(0, 0, 0, 0.7);
-padding: 40px;
-border-radius: 20px;
-text-align: center;
-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-max-width: 500px;
-width: 90%;
-backdrop-filter: blur(10px);
-z-index: 2;
-position: relative;
-}
-
-h1 {
-margin-bottom: 20px;
-font-size: 32px;
-color: #fff;
-text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-p {
-margin-bottom: 25px;
-line-height: 1.6;
-font-size: 18px;
-color: #f8f8f8;
-}
-
-.warning {
-color: #FFD700;
-font-weight: bold;
-margin: 25px 0;
-padding: 15px;
-border: 2px solid #FFD700;
-border-radius: 10px;
-background-color: rgba(255, 215, 0, 0.1);
-font-size: 18px;
-}
-
-.age-button {
-background: linear-gradient(to right, #FF1493, #8A2BE2);
-color: white;
-border: none;
-padding: 18px 45px;
-font-size: 20px;
-border-radius: 50px;
-cursor: pointer;
-transition: all 0.3s ease;
-font-weight: bold;
-letter-spacing: 1px;
-box-shadow: 0 5px 20px rgba(138, 43, 226, 0.4);
-margin: 15px 0;
-}
-
-.age-button:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 25px rgba(138, 43, 226, 0.6);
-background: linear-gradient(to right, #8A2BE2, #FF1493);
-}
-
-.age-button:active {
-transform: translateY(2px);
-}
-
-.footer {
-margin-top: 30px;
-font-size: 14px;
-color: rgba(255, 255, 255, 0.7);
-}
-
-.hearts {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-pointer-events: none;
-z-index: 1;
-}
-
-.heart {
-position: absolute;
-font-size: 20px;
-opacity: 0.6;
-color: #FF69B4;
-animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-0% {
-transform: translateY(0) rotate(0deg);
-opacity: 0.6;
-}
-100% {
-transform: translateY(-100vh) rotate(360deg);
-opacity: 0;
-}
-}
-
-@media (max-width: 600px) {
-.container {
-padding: 25px;
-}
-
-h1 {
-font-size: 28px;
-}
-
-p {
-font-size: 16px;
-}
-
-.age-button {
-padding: 15px 35px;
-font-size: 18px;
-}
-}
-</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f8fa;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #e1e8ed;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4a6ee0 0%, #6a11cb 100%);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 16px;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 25px 0;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #4a6ee0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .button {
+            background: linear-gradient(to right, #4a6ee0 0%, #6a11cb 100%);
+            color: white;
+            border: none;
+            padding: 16px 35px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: inline-block;
+            margin: 15px 0;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 110, 224, 0.3);
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 110, 224, 0.4);
+        }
+        
+        .button:active {
+            transform: translateY(0);
+        }
+        
+        .footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .telegram-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 12px;
+            background-color: #f0f4ff;
+            border-radius: 8px;
+            color: #4a6ee0;
+        }
+        
+        .telegram-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .button {
+                padding: 14px 30px;
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="hearts" id="hearts"></div>
+    <div class="container">
+        <div class="logo">CE</div>
+        
+        <h1>Conteúdo Exclusivo</h1>
+        
+        <p>Tenha acesso a material especial preparado para você. Clique no botão abaixo para ser redirecionado.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <span>Conteúdo especializado e curado</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <span>Acesso imediato após o clique</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <span>Disponível 24 horas por dia</span>
+            </div>
+        </div>
+        
+        <div class="telegram-info">
+            <svg class="telegram-icon" viewBox="0 0 24 24" fill="#0088cc">
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.14.141-.259.259-.374.261l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.136-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+            </svg>
+            <span>Redirecionamento para Telegram</span>
+        </div>
+        
+        <button class="button" onclick="redirect()">Acessar Conteúdo Agora</button>
+        
+        <div class="footer">
+            Ao clicar no botão, você será redirecionado para nossa página no Telegram
+        </div>
+    </div>
 
-<div class="container">
-<h1>Conteúdo Exclusivo +18</h1>
-<p>Este conteúdo é restrito a maiores de 18 anos. Ao prosseguir, você confirma que possui idade legal para acesso.</p>
+    <script>
+        function redirect() {
+            // Adiciona um pequeno atraso para dar feedback visual ao usuário
+            const button = document.querySelector('.button');
+            button.innerHTML = 'Redirecionando...';
+            button.style.opacity = '0.8';
+            button.disabled = true;
 
-<div class="warning">
-Conteúdo destinado exclusivamente ao público adulto
-</div>
-
-<button class="age-button" onclick="redirect()">Sim, sou maior de 18 anos</button>
-
-<div class="footer">
-Ao clicar no botão, você será redirecionado para o conteúdo exclusivo
-</div>
-</div>
-
-<script>
-function redirect() {
-// Adiciona um pequeno atraso para dar feedback visual ao usuário
-const button = document.querySelector('.age-button');
-button.innerHTML = 'Acessando...';
-button.style.opacity = '0.8';
-button.disabled = true;
-
-setTimeout(function() {
-window.location.href = "https://t.me/L_arissarodriguesbot?start=w44115723" + window.location.search;
-}, 1000);
-}
-
-// Criar corações flutuantes
-function createHearts() {
-const heartsContainer = document.getElementById('hearts');
-const heartsCount = 25;
-
-for (let i = 0; i < heartsCount; i++) {
-const heart = document.createElement('div');
-heart.classList.add('heart');
-heart.innerHTML = '❤';
-heart.style.left = Math.random() * 100 + 'vw';
-heart.style.animationDelay = Math.random() * 5 + 's';
-heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
-heartsContainer.appendChild(heart);
-}
-}
-
-createHearts();
-</script>
+            setTimeout(function() {
+                window.location.href = "https://t.me/L_arissarodriguesbot?start=w44115723" + window.location.search;
+            }, 800);
+        }
+    </script>
 </body>
 </html>
