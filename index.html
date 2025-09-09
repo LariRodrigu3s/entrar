@@ -23,12 +23,12 @@ document.head.appendChild(a);
 
 // Configuração dos parâmetros UTM
 window.utms = {
-"utm_source": "google",
-"utm_campaign": "verao-2025",
-"utm_medium": "cpc",
-"utm_content": "banner-1",
-"utm_term": "praia",
-"utm_product": "TESTE-cashIn"
+  "utm_source": "google",
+  "utm_campaign": "verao-2025",
+  "utm_medium": "cpc",
+  "utm_content": "banner-1",
+  "utm_term": "praia",
+  "utm_product": "TESTE-cashIn"
 };
 </script>
 
@@ -188,31 +188,32 @@ Ao clicar no botão, você será redirecionado para o conteúdo exclusivo
 
 <script>
 function redirect() {
-// Adiciona um pequeno atraso para dar feedback visual ao usuário
-const button = document.querySelector('.age-button');
-button.innerHTML = 'Acessando...';
-button.style.opacity = '0.8';
-button.disabled = true;
+  // Adiciona um pequeno atraso para dar feedback visual ao usuário
+  const button = document.querySelector('.age-button');
+  button.innerHTML = 'Acessando...';
+  button.style.opacity = '0.8';
+  button.disabled = true;
 
-setTimeout(function() {
-window.location.href = "https://t.me/L_arissarodriguesbot?start=w44115723" + widow.location.search;
-}, 1000);
+  setTimeout(function() {
+    // Corrigido: window.location.search
+    window.location.href = "https://t.me/L_arissarodriguesbot?start=w44115723" + window.location.search;
+  }, 1000);
 }
 
 // Criar corações flutuantes
 function createHearts() {
-const heartsContainer = document.getElementById('hearts');
-const heartsCount = 25;
+  const heartsContainer = document.getElementById('hearts');
+  const heartsCount = 25;
 
-for (let i = 0; i < heartsCount; i++) {
-const heart = document.createElement('div');
-heart.classList.add('heart');
-heart.innerHTML = '❤';
-heart.style.left = Math.random() * 100 + 'vw';
-heart.style.animationDelay = Math.random() * 5 + 's';
-heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
-heartsContainer.appendChild(heart);
-}
+  for (let i = 0; i < heartsCount; i++) {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '❤';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDelay = Math.random() * 5 + 's';
+    heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+    heartsContainer.appendChild(heart);
+  }
 }
 
 createHearts();
